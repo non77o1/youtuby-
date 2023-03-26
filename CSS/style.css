@@ -1,3 +1,51 @@
-.content>h4{
-    margin-top: 500px;
+@font-face {
+    font-family: "cairoFont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+body{
+    font-family: cairoFont, Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+button{
+    background-color: transparent !important;
+    color: #bf40bf !important;
+    border-color: #bf40bf !important;
+}
+
+button:hover{
+    color: #fff !important;
+    background-color: #bf40bf !important;
+}
+
+#top-menu .bg-light{
+    background-color: #fff !important;
+}
+
+#top-menu .video-icon{
+    background-color: #bf40bf;
+    color: #fff;
+    border-radius: 15%;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link{
+    color: #fff;
+    background-color: #bf40bf;
+}
+
+.navbar  .login{
+color: #bf40bf;
+}
+
+.modal .modal-header .close{
+    color: #bf40bf !important;
+    background-color: transparent !important;
+}
+
+input.form-control:focus,
+button:focus,
+input:focus{
+    box-shadow:none !important;
+    border-color:#d168d1 ;
 }

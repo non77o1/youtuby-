@@ -15,7 +15,10 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
         <!-- navbar-brand it used to make the giving element biger font size -->
-        <a class="navbar-brand" href="index.html">يوتيوبي</a>
+        <a class="navbar-brand" href="index.html">
+          يوتيوبي
+          <span class="video-icon p-1"><i class="fas fa-play-circle"></i></span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,22 +34,19 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link pl-0" href="log.html">الفيديوهات الرائجة</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link btn btn-danger text-white d-inline-block" data-toggle="modal" data-target="#loginModal"
-                href="#">
-                تسجيل الدخول</a>
+              <a class="nav-link " href="log.html">الفيديوهات الرائجة</a>
             </li>
           </ul>
           <div class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" aria-label="Search" />
-            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" onclick="location.href='search.html';">
+            <button class="btn  my-2 my-sm-0" type="submit" onclick="location.href='search.html';">
               ابحث
             </button>
           </div>
-        </div>
+          <a class="nav-link login" data-toggle="modal" data-target="#loginModal" href="#">
+            تسجيل الدخول</a>
+        
+          </div>
       </nav>
 
       <!-- Modal -->
@@ -456,6 +456,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
