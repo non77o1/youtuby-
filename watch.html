@@ -11,73 +11,130 @@
 </head>
 
 <body class="rtl mt-5">
+  <div class="layer">
+
+  </div>
   <div id="top-menu">
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
         <!-- navbar-brand it used to make the giving element biger font size -->
-        <a class="navbar-brand" href="index.html">يوتيوبي</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
+        <i class="fas fa-bars fa-lg" id="toggler"></i>
+        <b>
+          <a class="navbar-brand" href="index.html">
+            يوتيوبي
+            <span class="video-icon p-1"><i class="fas fa-play-circle"></i></span>
+          </a>
+        </b>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-lg-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">الفديوهات المقترحة </a>
+              <a class="nav-link px-3 ml-1" href="index.html">الفديوهات المقترحة </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-lg-3" href="#">المرفوعة حديثاً</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link pl-0" href="#">الفيديوهات الرائجة</a>
+              <a class="nav-link ml-lg-3 px-3 ml-1" href="#">المرفوعة حديثاً</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link btn btn-danger text-white d-inline-block" data-toggle="modal" data-target="#loginModal"
-                href="#">
-                تسجيل الدخول</a>
+              <a class="nav-link px-3 ml-1" href="#">الفيديوهات الرائجة</a>
             </li>
           </ul>
           <div class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" aria-label="Search" />
-            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" onclick="location.href='search.html';">
+            <button class="btn  my-2 my-sm-0" type="submit" onclick="location.href='search.html';">
               ابحث
             </button>
           </div>
         </div>
+        <i class="fas fa-search mr-4 search-icon"></i>
+        <a class="nav-link login" data-toggle="modal" data-target="#loginModal" href="#">
+          تسجيل الدخول</a>
       </nav>
+      <input type="search" class="form-control search-input" placeholder="ابحث عن ...">
 
-      <!-- Modal -->
-      <div class="modal fade rtl" id="loginModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
-              <button type="button" class="close" data-dismiss="modal">
-                <span>&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="emileFild" class="col-form-label">البريد الإكتروني:</label>
-                  <input type="email" class="form-control" id="emileFild" />
-                </div>
-                <div class="form-group">
-                  <label for="passwordFild" class="col-form-label">كلمة المرور:</label>
-                  <input type="password" class="form-control" id="passwordFild" />
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <a href="">نسيت كلمةالمرور</a>
-              <a href="" class="mx-auto">انشاء حساب</a>
-              <button type="button" class="btn btn-primary">دخول</button>
-            </div>
-          </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade rtl" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="emileFild" class="col-form-label">البريد الإكتروني:</label>
+              <input type="email" class="form-control" id="emileFild" />
+            </div>
+            <div class="form-group">
+              <label for="passwordFild" class="col-form-label">كلمة المرور:</label>
+              <input type="password" class="form-control" id="passwordFild" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="">نسيت كلمةالمرور</a>
+          <a href="" class="mx-auto">انشاء حساب</a>
+          <button type="button" class="btn btn-primary">دخول</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row pt-4 ">
+    <div id="wrap">
+      <div class="sidebar ">
+        <ul class="list-group list-group-flush pl-0 ">
+          <a href="index.html" class="list-group-item list-group-item-action ">
+            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+          </a>
+          <a href="index.html" class="list-group-item list-group-item-action">
+            <i class="fab fa-algolia mr-2 purple"></i> الفيديوهات المقترحة
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="far fa-plus-square mr-2 purple"></i> المرفوعة حديثًا
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fas fa-fire-alt mr-2 purple"></i> الفيديوهات الرائجة
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fas fa-fire-alt mr-2 purple"></i> فيديوهاتي
+          </a>
+          <a href="log.html" class="list-group-item list-group-item-action">
+            <i class="fas fa-history mr-2 purple"></i> سجل المشاهدة
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="far fa-share-square mr-2 purple"></i> الإشتراكات
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fas fa-film mr-2 purple"></i> الأفلام والعروض
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fas fa-gamepad mr-2 purple"></i> ألعاب فيديو
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fas fa-tshirt mr-2 purple"></i> الموضة والجمال
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fas fa-graduation-cap mr-2 purple"></i> محتوى تعليمي
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fas fa-cog mr-2 purple"></i> الإعدادات
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fas fa-question-circle mr-2 purple"></i> مساعدة
+          </a>
+          <a href="https://academy.hsoub.com/store/1-%D8%AF%D9%88%D8%B1%D8%A9-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85/"
+            class="list-group-item list-group-item-action pb-5 text-center">
+            دورة تطوير واجهات المستخدم<br>
+            &copy; 2020 أكاديمية حسوب
+          </a>
+        </ul>
       </div>
     </div>
   </div>
@@ -538,15 +595,15 @@
     </div>
   </div>
   <script src="https://kit.fontawesome.com/a850561e89.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+  <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
