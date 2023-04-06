@@ -10,7 +10,7 @@ $(document).ready(function () {
 
         var right = $('.sidebar').css("right");
         if (right == "0px") {
-            $(".sidebar").css({ 'right': '-17rem' });
+            $(".sidebar").css({ 'right': '-20rem' });
             $(".layer").fadeOut();
         }
         else {
@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     $('.layer').click(function () {
-        $('.sidebar').css({ 'right': '-17rem' });
+        $('.sidebar').css({ 'right': '-20rem' });
         $(".layer").fadeOut();
     });
 

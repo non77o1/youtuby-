@@ -23,7 +23,15 @@ button:hover {
     color: #fff !important;
     background-color: #bf40bf !important;
 }
+.card .card-horizontal .card-body p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.card-body {
+    min-width: 0px;
+}
 #top-menu .bg-light {
     background-color: #fff !important;
 }
@@ -101,7 +109,7 @@ time {
 .sidebar {
     position: fixed;
     z-index: 4;
-    right: -17rem;
+    right: -20rem;
     transition: all .5s ease-in-out;
     height: 100%;
     background-color: #fff;
@@ -171,7 +179,7 @@ time {
 }
 
 .search-input {
-    position: absolute;
+    position: fixed;
     top: 72px;
     border: nont;
     padding: 6px 23px;

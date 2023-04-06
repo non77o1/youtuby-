@@ -1,0 +1,21 @@
+.History-right-column{
+    background-color: #fff;
+    height: 566px;
+}
+
+.list-group-item.active{
+    background-color: #bf40bf;
+    border-color: #bf40bf;
+}
+
+time {
+    bottom: 7px;
+    left: 29px;
+}
+
+.history-page .remove{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 13px;
+}
