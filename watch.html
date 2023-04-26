@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="CSS/bootstrap-rtl.css" />
   <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/watch.css" />
+
   <title> مشاهدة | يوتيوبي</title>
 </head>
 
@@ -27,7 +29,7 @@
         </b>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-lg-auto">
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link px-3 ml-1" href="index.html">الفديوهات المقترحة </a>
             </li>
             <li class="nav-item">
@@ -142,7 +144,7 @@
   <div class="watch-page pt-5">
     <div class="container-fluid">
       <div class="card border-0">
-        <div class="row">
+        <div class="row px-2">
           <div class="col-md-7">
             <video controls poster="img/poster.png" muted loop class="w-100">
               <track kind="captions" src="video/caption.vtt" srclang="ar" label="عربي" default>
@@ -151,7 +153,7 @@
               لا يدعم متصفحك العنصر <code>video</code>.
             </video>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 ">
             <div class="card-block">
               <a href="watch.html">
                 <small class="text-muted">
@@ -166,10 +168,11 @@
               </a>
 
               <p>تم إعداد هذه الدورة على يد نخبة من أفضل المبرمجين العرب بتسلسل بسيط وواضح، بإنهائك لها ستصبح مطوّر
-                واجهات مستخدم دون الحاجة
+                واجهات مستخدم دون الحاجة <span id="dots">...</span> <span id="more">
                 لامتلاك معرفة سابقة بالبرمجة، خلال هذه ستتعلم تطوير واجهات المستخدم خطوة بخطوة اعتمادًا على التجربة
-                العملية والمادة العلمية التي يقدمها مدربون محترفون.
+                العملية والمادة العلمية التي يقدمها مدربون محترفون.</span>
               </p>
+              <button class="btn mb-4" id="myBtn">عرض المزيد</button>
 
             </div>
             <div class="watch-icons">
@@ -184,7 +187,7 @@
         </div>
       </div>
 
-      <div class="row mt-4">
+      <div class="row mt-4 px-2">
         <div class="col-lg-7 order-2 order-lg-1">
           <div class="comments">
             <div class="comments-details mb-3">
@@ -604,6 +607,7 @@
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
+    <script src="js/watch.js"></script>
 </body>
 
 </html>
