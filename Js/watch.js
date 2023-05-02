@@ -2,6 +2,10 @@ $(document).ready(function(){
     $("#myBtn").on("click",function(){
         ready();
     });
+
+    $(".reply").click(function(){
+        $(this).parents("div.row").next("div.card").toggle();
+    });
 });
 
 function ready(){

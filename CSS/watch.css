@@ -16,3 +16,68 @@
 .watch-page #more{
     display: none;
 }
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #bf40bf;
+}
+
+.card-inner {
+    display: none;
+}
+
+.public-comments .card .btn{
+    color: #fff;
+    background-color: #bf40bf;
+    border-color: #bf40bf;
+}
+
+.public-comments .card .btn:hover {
+    background-color: #862986;
+}
+
+time{
+    left: 24px !important;
+}
+
+.watch-page .fa-play{
+    right: 46% !important;
+}
+
+@media (min-width:992px){
+
+    /* What this query really means,
+        is “If [device width] is greater than or equal to 600px,
+        then do {
+            …
+        }
+    
+        ” */
+  time{
+    font-size: 13px;
+  }
+
+  .fa-play{
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 1073px)  { 
+/* What this query really means,
+    is “If [device width] is less than or equal to 600px,
+    then do {
+        …
+    }
+
+    ” */
+    /*وضع هامش في أسفل الزر لكي يبتعد عن الأيقونات الموجودة أسفل منه*/
+    #myBtn {
+        margin-bottom: 60px !important;
+    }
+}
+
+@media (max-width:570px) {
+   .reply-time{
+    font-size: 10px;
+   }
+}
