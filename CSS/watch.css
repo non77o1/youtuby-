@@ -6,9 +6,12 @@
 .watch-page .watch-icons{
     position: absolute;
     bottom: 10px;
-    right: 20px;
+    /* right: 20px; */
 }
 
+div.dropdown-menu.show{
+        inset: 0px 165px auto auto !important;
+}
 .watch-icons i:hover,.watch-icons span:hover{
     cursor: pointer;
 }

@@ -190,7 +190,7 @@ time {
 }
 
 @media (max-width:1115px) {
-    .navbar .collapse .form-inline {
+    .navbar .collapse .form-hide {
         display: none;
     }
 
